@@ -1,0 +1,566 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <style type="text/css">
+*{margin:0;padding:0;-moz-box-sizing:border-box;box-sizing:border-box}body{background-color:transparent;margin:10px auto;padding:15px 15px 15px;font-size:14px;color:#e6e6e6;line-height:1.58em;text-align:left;word-wrap:break-word;#overflow:hidden}h1,h2,h3,h4,h5,h6{position:relative;margin-bottom:.5em;font-weight:bold;margin-top:4px}h1{font-size:1.43em}h2{font-size:1.29em}h3{font-size:1.14em}h4{font-size:1em}h5{font-size:.86em}h6{font-size:.79em}h1 .headeranchor,h2 .headeranchor,h3 .headeranchor,h4 .headeranchor,h5 .headeranchor,h6 .headeranchor{display:none;color:#000;vertical-align:middle}h1:hover .headeranchor-link,h2:hover .headeranchor-link,h3:hover .headeranchor-link,h4:hover .headeranchor-link,h5:hover .headeranchor-link,h6:hover .headeranchor-link{height:1em;padding-left:8px;margin-left:-30px;line-height:1;text-decoration:none}h1:hover .headeranchor-link .headeranchor,h2:hover .headeranchor-link .headeranchor,h3:hover .headeranchor-link .headeranchor,h4:hover .headeranchor-link .headeranchor,h5:hover .headeranchor-link .headeranchor,h6:hover .headeranchor-link .headeranchor{display:inline-block}a{background:transparent;color:#4183c4;text-decoration:none}a:active,a:hover,a:focus{outline:0;text-decoration:underline}b,strong{font-weight:bold}img{border:0;max-width:100%;-moz-box-sizing:border-box;box-sizing:border-box}hr{height:0;padding:0;margin:.5em 0;overflow:hidden;background:transparent;border:0;border-bottom:1px solid #ddd;box-sizing:content-box;-moz-box-sizing:content-box}hr:before,hr:after{display:table;content:" "}hr:after{clear:both}mark{background:#ff0;color:#000;font-style:italic;font-weight:bold}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}pre{overflow:auto}code,kbd,pre,samp{font-size:1em}input{color:inherit;font:inherit;margin:0}html input[disabled]{cursor:default}input{line-height:normal}input[type="checkbox"]{box-sizing:border-box;padding:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}.codehilitetable{border:0;border-spacing:0}.codehilitetable tr{border:0}.codehilitetable pre,.codehilitetable div.codehilite{margin:0}.linenos,.code,.codehilitetable td{border:0;padding:0}td:not(.linenos) .linenodiv{padding:0!important}.code{width:100%}.linenos div pre,.linenodiv pre,.linenodiv{border:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-border-top-left-radius:3px;-webkit-border-bottom-left-radius:3px;-moz-border-radius-topleft:3px;-moz-border-radius-bottomleft:3px;border-top-left-radius:3px;border-bottom-left-radius:3px}.code div pre,.code div{border:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;-moz-border-radius-topright:3px;-moz-border-radius-bottomright:3px;border-top-right-radius:3px;border-bottom-right-radius:3px}input{font:13px Helvetica,arial,freesans,clean,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";line-height:1.4}ul,ol{padding:0;margin-top:0;margin-bottom:0}ol ol,ul ol{list-style-type:lower-roman}ul ul ol,ul ol ol,ol ul ol,ol ol ol{list-style-type:lower-alpha}dd{margin-left:0}code,pre,samp{font-size:12px}pre{margin-top:0;margin-bottom:0}kbd{background-color:#e7e7e7;background-image:-moz-linear-gradient(#fefefe,#e7e7e7);background-image:-webkit-linear-gradient(#fefefe,#e7e7e7);background-image:linear-gradient(#fefefe,#e7e7e7);background-repeat:repeat-x;border-radius:2px;border:1px solid #cfcfcf;color:#000;padding:3px 5px;line-height:10px;font:11px Consolas,"Liberation Mono",Menlo,Courier,monospace;display:inline-block}.headeranchor-link{position:absolute;top:0;bottom:0;left:0;display:block;padding-right:6px;padding-left:30px;margin-left:-30px}.headeranchor-link:focus{outline:0}p,blockquote,ul,ol,dl,table,pre,.admonition{margin-top:0;margin-bottom:1.8em}ul,ol{padding-left:2em}ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0}li>p{margin-top:16px}dl{padding:0}dl dt{padding:0;margin-top:16px;font-style:italic;font-weight:bold}dl dd{padding:0 16px;margin-bottom:16px}blockquote{font-size:1em;padding:0 .7em;border-left:3px solid #ddd}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}table th{font-weight:bold}table th,table td{padding:6px 13px;border:1px solid #ddd}table tr{background-color:rgba(199,199,199,0.16);border-top:1px solid #ccc}table tr:nth-child(2n){background-color:rgba(128,128,128,0.16)}code,samp{padding:.1em .2em;margin:0 .1em;font-size:85%;background-color:rgba(199,199,199,0.2);border-radius:1px}code:before,code:after{letter-spacing:-0.2em;content:"\00a0"}pre>code{padding:0;margin:0;font-size:100%;#word-break:normal;#white-space:pre;word-break:break-word;white-space:pre-wrap;background:transparent;border:0;background:#000}.codehilite{margin-bottom:16px}
+.codehilite pre,pre{#padding:16px;background:#000;overflow:auto;font-size:85%;line-height:1.45;background-color:rgba(199,199,199,0.16);border-radius:3px}.codehilite pre{margin-bottom:0;word-break:normal}pre{word-wrap:normal}pre code{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}pre code:before,pre code:after{content:normal}.admonition{-webkit-border-radius:3px;-moz-border-radius:3px;position:relative;border-radius:3px;border:1px solid #e0e0e0;border-left:6px solid #333;padding:10px 10px 10px 30px}.admonition table{color:#333}.admonition p{padding:0}.admonition-title{font-weight:bold;margin:0}.admonition>.admonition-title{color:#333}.attention>.admonition-title{color:#a6d796}.caution>.admonition-title{color:#d7a796}.hint>.admonition-title{color:#96c6d7}.danger>.admonition-title{color:#c25f77}.question>.admonition-title{color:#96a6d7}.note>.admonition-title{color:#d7c896}.admonition:before,.attention:before,.caution:before,.hint:before,.danger:before,.question:before,.note:before{font:normal normal 16px fontawesome-mini;-moz-osx-font-smoothing:grayscale;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;line-height:1.5;color:#333;position:absolute;left:0;top:0;padding-top:10px;padding-left:10px}.admonition:before{content:"\f056\00a0";color:333}.attention:before{content:"\f058\00a0";color:#a6d796}.caution:before{content:"\f06a\00a0";color:#d7a796}.hint:before{content:"\f05a\00a0";color:#96c6d7}.danger:before{content:"\f057\00a0";color:#c25f77}.question:before{content:"\f059\00a0";color:#96a6d7}.note:before{content:"\f040\00a0";color:#d7c896}.admonition::after{content:normal}.attention{border-left:6px solid #a6d796}.caution{border-left:6px solid #d7a796}.hint{border-left:6px solid #96c6d7}.danger{border-left:6px solid #c25f77}.question{border-left:6px solid #96a6d7}.note{border-left:6px solid #d7c896}.admonition>*:first-child{margin-top:0!important}.admonition>*:last-child{margin-bottom:0!important}.progress{display:block;width:300px;margin:10px 0;height:24px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-color:#ededed;position:relative;box-shadow:inset -1px 1px 3px rgba(0,0,0,0.1)}.progress-label{position:absolute;text-align:center;font-weight:bold;width:100%;margin:0;line-height:24px;color:#333;text-shadow:1px 1px 0 #fefefe,-1px -1px 0 #fefefe,-1px 1px 0 #fefefe,1px -1px 0 #fefefe,0 1px 0 #fefefe,0 -1px 0 #fefefe,1px 0 0 #fefefe,-1px 0 0 #fefefe,1px 1px 2px #000;-webkit-font-smoothing:antialiased!important;white-space:nowrap;overflow:hidden}.progress-bar{height:24px;float:left;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-color:#96c6d7;box-shadow:inset 0 1px 0 rgba(255,255,255,0.5),inset 0 -1px 0 rgba(0,0,0,0.1);background-size:30px 30px;background-image:-webkit-linear-gradient(135deg,rgba(255,255,255,0.4) 27%,transparent 27%,transparent 52%,rgba(255,255,255,0.4) 52%,rgba(255,255,255,0.4) 77%,transparent 77%,transparent);background-image:-moz-linear-gradient(135deg,rgba(255,255,255,0.4) 27%,transparent 27%,transparent 52%,rgba(255,255,255,0.4) 52%,rgba(255,255,255,0.4) 77%,transparent 77%,transparent);background-image:-ms-linear-gradient(135deg,rgba(255,255,255,0.4) 27%,transparent 27%,transparent 52%,rgba(255,255,255,0.4) 52%,rgba(255,255,255,0.4) 77%,transparent 77%,transparent);background-image:-o-linear-gradient(135deg,rgba(255,255,255,0.4) 27%,transparent 27%,transparent 52%,rgba(255,255,255,0.4) 52%,rgba(255,255,255,0.4) 77%,transparent 77%,transparent);background-image:linear-gradient(135deg,rgba(255,255,255,0.4) 27%,transparent 27%,transparent 52%,rgba(255,255,255,0.4) 52%,rgba(255,255,255,0.4) 77%,transparent 77%,transparent)}.progress-100plus .progress-bar{background-color:#a6d796}.progress-80plus .progress-bar{background-color:#c6d796}.progress-60plus .progress-bar{background-color:#d7c896}.progress-40plus .progress-bar{background-color:#d7a796}.progress-20plus .progress-bar{background-color:#d796a6}.progress-0plus .progress-bar{background-color:#c25f77}.candystripe-animate .progress-bar{-webkit-animation:animate-stripes 3s linear infinite;-moz-animation:animate-stripes 3s linear infinite;animation:animate-stripes 3s linear infinite}@-webkit-keyframes animate-stripes{0{background-position:0 0}100%{background-position:60px 0}}@-moz-keyframes animate-stripes{0{background-position:0 0}100%{background-position:60px 0}}@keyframes animate-stripes{0{background-position:0 0}100%{background-position:60px 0}}.gloss .progress-bar{box-shadow:inset 0 4px 12px rgba(255,255,255,0.7),inset 0 -12px 0 rgba(0,0,0,0.05)}.critic_mark{background:#ff0}.critic_delete{color:#c82829;text-decoration:line-through}.critic_insert{color:#718c00;text-decoration:underline}.critic_comment{color:#8e908c;font-style:italic}
+.headeranchor{font:normal normal 16px octicons-anchor;line-height:1;display:inline-block;text-decoration:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.headeranchor:before{content:"\f05c"}.task-list-item{list-style-type:none}.task-list-item+.task-list-item{margin-top:3px}.task-list-item input{margin:0 4px .25em -20px;vertical-align:middle}@media only screen and (min-width:480px){body{font-size:12px}}@media only screen and (min-width:768px){body{font-size:14px}}  </style>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ showProcessingMessages: false,
+ messageStyle: 'none',
+ showMathMenu: false,
+ tex2jax: {
+   inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+   displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+  }
+ });
+</script>
+<script type="text/javascript" async
+  src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<link rel="dns-prefetch" href="//cdn.mathjax.org" />
+<link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script> 
+<script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+  <article id="content">
+<ul>
+<li><span><a href="https://play.google.com/store/apps/details?id=de.j4velin.systemappmover">/system/app mover</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.mandrakesoft.a1000words">1000 слов (начальный уровень)</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.mandrakesoft.a2000words">1000 слов (средний уровень)</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.appwise.voltefiveg">5G LTE</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.voicetranslator.lte">5G/4G LTE</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.velcom.vbanking">A1 banking</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.a1dev.sdbench">A1 SD Bench</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.farlex.abbreviations">Abbreviations</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.adrionics.android.adbmaster.installer.free">ADB-Master-Installer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dv.adm">ADM</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.arpaplus.adminhands">Admin Hands</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.adobe.reader">Adobe Acrobat</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.shilimobi.aeroconn">AeroConn</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.finalwire.aida64">AIDA64</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.aimp.player">AIMP</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.hsoft.all.battery">All Battery</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=alot.pro.alotpro">Alot Pro</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.amazon.venezia">Amazon Appstore</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=androit.fasterapps">Android Faster Apps</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.andreacioccarelli.androoster">Androoster</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.artsplanet.android.animallifebattery">Animal Life Battery</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.anonytun.android">AnonyTun</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=green_green_avk.anotherterm">Another Term</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.cbinnovations.antispy">Anti Spyware Scanner cb</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.mallocprivacy.antistalkerfree">AntiStalker</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=mnn.Android">AP News</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.calsignlabs.apde">APDE</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=cn.beingyi.apkencryptor">APK Encryptor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.hd.backupapk">Apk Extractor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ovh.oft.apkextractor">APK Extractor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.aksapps.apkgenerator">Apk Generator</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=it.sourcenetitalia.appmanager">App Manager</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.iptvlinks.appto.apk">App To Apk</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kroegerama.appchecker">AppChecker</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=info.kfsoft.appinfo.mini">AppInfo Mini</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ubqsoft.sec01">Application Inspector</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.a0soft.gphone.app2sd">AppMgr III</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=in.co.pricealert.apps2sd">Apps2SD PRO</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ss.aris">Aris Launcher</a></span></li>
+<li><span><a href="https://www.google.com/search?q=com.gameloft.android.GloftASGM">Asphalt Nitro</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.hideitpro">Audio Manager</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=appinventor.ai_sanka_werapitiya.Aussi_slang_game_dictionerry">Aussie slang quiz</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.gonext.automovetosdcard">Auto Move to SD Card</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.avast.android.mobilesecurity">Avast Mobile Security</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.kidinov.awd">AWD - IDE для Web разработки</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.azip.unrar.unzip.extractfile">AZIP Master</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=cc.nextlabs.bash">Bash 5.0 Manual</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.hubalek.android.reborn.beta">Battery Widget Reborn 2021</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.audionowdigital.player.bbcworld">BBC World Service</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.liuzho.file.explorer">BD файловый менеджер</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.chromium.webapk.ad7e4877376c7ad08_v2">Beats2Dance</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.bedr_radio.app">bedr radio</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.krdevelop.bgptracev2">BGPTrace</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=patrykwojcieszak.binaryharvester">Binary Tools</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.esstudio.coinwidget">Bitcoin Chart Widget</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.nhiroki.bluelineconsole">Blue Line Console</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pzolee.bluetoothscanner">Bluetooth Scanner</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=eu.darken.bluemusic">Bluetooth Volume Manager</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.bootmod3.mobile">bootmod3</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars">Brawl Stars</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=app.newsinbullets">Bullets</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ru.meefik.busybox">BusyBox</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.oasisfeng.bytesinsight">Bytes Insight</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kapidhvaj.cprograms">C Programs</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.radinc.csharpshell">C# Shell (C# Offline Compiler)</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.cld.eaasydater">Calendar</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dzano.calendar">Calendar Widget</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=calleridannounce.callernameannouncer.announcer.speaker">Call Announcer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pinestudio.buildings">Cats in Time</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=make.more.r2d2.cellular_z">Cellular-Z</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.chart.wifi.lte5g.lte4g.lte3g.chartofsignalstrength">Chart signals - Network speed test 3g 4g 5g Wi-Fi</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=nrapps.android.storagetree">Check stats &amp; clean low memory</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.tohsoft.game.chess">Chess</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.turbolabz.instantchess.android.googleplay">Chess Stars</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kingsofgames.chessuniverse">Chess Universe</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.fimetech.chessfimee">Chessify</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.chineseskill">ChineseSkill</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dvtonder.chronus">Chronus</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.citymapper.app.release">Citymapper</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.cellular4g.speedtest">Clean Up Your Phone - Measure Speed WiFi, 5G 4G 3G</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kimscom.clockview">ClockView</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.softnice.cmd">cmd</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.channelnewsasia">CNA</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ro.crxapps.codenews">Code News</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.cloudcompilerapp">CodeSnack IDE</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=jp.kamusoft.coloranalyzer">Color Analyzer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.connectbot">ConnectBot</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.notebuddy.conspy">conSpy_</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.StarTrinity.CST">Continuous Speed Test</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ds.cpuoverlay">Cool Tool</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=co.aureolin.coreirc.lite">CoreIRC Go</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.glgjing.stark">Cpu Monitor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.texts.throttlebench">CPU Slowdown &amp; Thermal Throttling test</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.spencerstudios.cpuspeedtest">CPU Speed Test</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.cpuid.cpu_z">CPU-Z</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.razorlabs.cpumeter">CPU/GPU Meter &amp; Notification</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.crimson.musicplayer">Crimson Music Player</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kokoschka.michael.crypto">Crypto</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pixplicity.cryptogram">Cryptogram</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.jmsc.cryptogram">Cryptogram</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ir.gedm.cryptowake2">CryptoWake AOD</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.despdev.currencyconverter">CurrenC</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=name.mikanoshi.customiuizer">CustoMIUIzer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.cxinventor.file.explorer">Cx Проводник</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ru.iiec.cxxdroid">Cxxdroid</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dafftin.android.moon_phase">Daff Moon</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.oscarperdanakusuma.dagobrowser">Dago Browser</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.z9.jur.onlinedanishradio.danskradio">Danish radio</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.deskangel.daremote">DaRemote</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.darkbrowser">Dark Browser</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.darktrace.darktrace">Darktrace</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.best.recovery.datarecovery.contactrecovery">Data Recovery &amp; Restore</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.lotusflare.datasensor">DataEye</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.safetyjabber.datawipe">Datawipe</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.paprbit.dcoder">Dcoder</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ni.deephouseradio">Deep House Radio DHR</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.defhat.phcomm">DefHat</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.delgeo.desygner">Desygner</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.tyrostudio.devbrowser">DevBrowser</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.yudaprama.developer_browser">Developer Browser</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.developer_console">developer console</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.developer_assistant_apps.android_developer_assistant">Developer Studio</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.technoon.deviceinfo">Device Info</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.toralabs.deviceinfo">Device Info</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pacmac.devicediag.free">Device Info</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ytheekshana.deviceinfo">Device Info</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.vishtekstudios.deviceinfo">Device Info 360</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dexplorer">Dexplorer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kyhsgeekcode.disassembler">Disassembler</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=me.kuder.diskinfo">DiskInfo</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ru.androidtools.djvureaderdocviewer">DjVu-ридер</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.app.freecamscanner.document.scanner.pdfconverter.camscanner2021">Document Scanner</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.serinus42.downdetector">Downdetector</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.hwkrbbt.downloadall">Download All Files</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.downloaderfor.tiktok">Downloader for TikTok</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.trendmicro.freetmms.gmobi">Dr. Safety</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.chess.chesscoach">Dr. Wolf</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.drweb.pro">Dr.Web Security Space</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.tyganeutronics.telcomaster">Drakor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.sweefitstudios.drawgraffiticreator">Draw Graffiti Creator</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.flanschifox.glimmer">Dreaming Fox</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid">DriveDroid</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.inkwired.droidinfo">Droid Info</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ashampoo.droid.optimizer">Droid Optimizer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dstarlab.icommunicator">dSTAR</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.blogspot.novalabsandroid.dualclock">Dual Clock</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.baloota.dumpster">Dumpster</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=info.javaway.notepad_alarmclock">E-notty</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.amensah.easycoder">Easy Coder</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=mobi.eup.jpnews">Easy Japanese</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=xyz.tipsbox.edf">EDF</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.prime.EduYear">EduYear Prime</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ru.narod.fdik82.clubmusic">Electronic Dance Music Radio ZXSoft</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.zielm.emacs">Emacs</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pransuinc.energybar">Energy Bar</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.english.vivoapp.grammar.grammaren">English Grammar</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.shohruhak.eng_pocket_dictionary">English Pocket Dictionary</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.nspier.enspierbrowser">Enspier Browser</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.jecsham.epicpcmonitor">Epic Monitor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.goodproductssoft.minningpool">Ethermine Monitor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.agence3pp.euroconsumers">euroconsumers</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ru.europaplus.radio">Europa Plus</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.lenntt.evoicereader">Evie</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.speedsoftware.explorer">Explorer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.openfarmanager.android">Far On Droid</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.devhd.feedly">Feedly</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.best.filemanager.black.theme">File Manager</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.explorer.file.manager.files.storage.zipfile">File Manager</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.filerecover.app">File Recovery</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.radiofrance.radio.fip.android">fip</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.frju.flym">Flym</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.vvf.fmcube">FM Cube</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.chromium.webapk.a61bba0127d940ec2_v2">FM4</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=allen.town.focus.reader">FocusReader</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=io.footmark.app">Footmark</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.foranylist.foranylistfree">ForAnyList Free</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.forwardchess">Forward Chess</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.freedownloadmanager.fdm">Free Download Manager</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.fvcorp.android.flyping">Free Ping</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.vbsoftech.freewifianywhere">Free wifi anywhere</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=co.freewificonnection.freewifi.freewifipassword">Free WIFI Connection Anywhere</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ru.krikun.freespace">FreeSpace</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=studio.superrepair.forandroid">Full Repair</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=nextapp.fx">FX</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=de.carknue.gmon2">G-MoN</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.gyokovsolutions.gnettracklite">G-NetTrack Lite</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.galarmapp">Galarm</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=esa.estec.galileo.galileopvt">GalileoPVT</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.howtogetcalldetails.callhostory.truecaller.anynumbercalldetail.howtogetanynumbercalldetail.findcallhistory">Get Call Detail of Any Mobile Number</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.everimaging.goart">GoArt</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.gologin.gologin_mobile">GoLogin</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.magazines">Google Новости</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.google.android.play.games">Google Play Игры</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ijsoft.gpul">GPU-L</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.area120.grasshopper">Grasshopper</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=br.tiringo.comandosLinux">Guia de Comandos Linux</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.hammersecurity">Hammer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=binaryearth.handygpssub">Handy GPS</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=app.dupa.insta">HeadDance</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=mobi.infolife.eraser">History Eraser</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ido.houseplans.floorplans">House Plans Ideas</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.evozi.injector">HTTP Injector</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.herocraft.game.hyperforma.cyber.hack.arcade">Hyperforma</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.must_dev.itdictionary">I.T. Dictionary</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=tv.i24news.i24news">i24NEWS</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pacmac.pinger">ICMP Ping</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.peace.IdPhoto">ID фото</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.navin.idioms">IDIOMS &amp; PHRASES</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ikarus.mobile.security">IKARUS mobile.security</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.protectstar.ilockersecurenotes">iLocker Vault</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.IntouchApp">InTouchApp</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=pan.alexander.tordnscrypt.gp">InviZible Pro</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.evo.inware">Inware</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.gridmatrix.ipaddressgeoinfonetworkinfotool">IP Address &amp; Network Info Tool</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.bigdatacloud.iptools">IP Tools</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.milktea.garakuta.iptools">IP Tools</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.KayaDevStudio.ipaddresslocation">IP-адрес и поиск местоположения</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ip2locationtools.app">IPTools</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.aljazarisoft.app.irc">IRC Chat Channels</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.projectstar.ishredder.android.standard">iShredder</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=se.qzx.isoextractor">ISO Extractor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pb.android.isocraft">ISOCraft</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.skynetsoftware.itraceroute">itraceroute</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=air.JavaEditor">Java Editor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.nutpan.jdoodle_app">JDoodle</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.robysoft.justrain">Just Rain</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=lifegoal.helpinghands.kalilinux">Kali Linux</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=parag.kalilinux">Kali Linux Tutorial</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.tapnav.karma">Karma</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.appsinnova.android.keepfile">KeepFiles</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kmplayer">KMPlayer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.draco.ktweak">KTweak</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=fr.webrox.landrive">LAN drive</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.meenstudio.learnbackend">Learn Backend Dev</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.meenstudio.learnfrontend">Learn Frontend Dev</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ciscotrainings.learnethicalhacking">Learn Kali Linux</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.lichess.mobileapp">lichess</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.lightx">LightX</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.buak.Link2SD">Link2SD</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.inspiredandroid.linuxcommandbibliotheca">Linux Command Library</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.itools.linuxcommands">Linux Commands</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dzino.linuxservice">Linux Service</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kadshreshta.linuxworld">Linux World</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=de.onyxbits.listmyapps">List My Apps</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.jimeem.fast.lite.browser">Lite Browser</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.liveplayer.v6">Live Stream Player</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.apptiva.logviewer">Log Viewer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.logicapp">LogicLike</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=me.lo.lomefree">Lome</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=gaurav.lookup">Lookup</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dolingerweb.lradio">LRadio</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.simplyadvanced.ltediscovery">LTE Discovery</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid">MacroDroid</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.mandarin.vpn">Mandarin VPN</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=mediau.player">mediaU</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.paragon.tcplugins_ntfs_ro">Microsoft exFAT/NTFS for USB by Paragon Software</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.midorinext.android">Midori Lite</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.getmimo">Mimo</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=de.devmil.minimaltext">Minimalistic Text</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.OrangeDS.BeOs">Mint</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.lifewaresolutions.moonwd">Moon Widget Deluxe</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.lma.mp3recorder">MP3-рекордер</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.rocks.music">Music</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=in.krosbits.musicolet">Musicolet</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.myfin_demo">Myfin</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.myliollc.mylio">Mylio</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=cz.mroczis.netmonster">NetMonster</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.borii.nettools">NetTools</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.techet.netanalyzerlite.an">Network Analyzer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.wilysis.cellinfolite">Network Cell Info Lite</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.nmnconfignetwork">Network Configuration</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pzolee.networkscanner">Network Scanner</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.goodidea.network.tool">Network Tool</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ua.cv.westward.nt2">Network Tools II</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.tools.netgel.netx">NetX</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.waplay.news">News Kit</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.nram.n.newswidget">News Widget</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.newsadoo.newsadoo">Newsadoo</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.robertwgh.opencl_z_android">OpenCL-Z</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.realtechvr.glview">OpenGL Extensions Viewer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.opera.mini.native">Opera Mini</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.androizen.operatornamewidget">Operator Name Widget</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.optimizer.pro.beeztel">Optimizer Pro</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.overlock.your.phone">overlock your phone</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=pl.itto.packageinspector">Package Inspector</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ma.wanam.partitions">Partitions Backup</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=online.passportphoto.visa.id.app">Passport photo online</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.teqtic.pclock">PClock</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.performancetweaker.app">Performance Tweaker</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.thiyagaraaj.perl">Perl</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.idea.PhoneDoctorPlus">Phone Doctor Plus</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.Project100Pi.themusicplayer">Pi Music Player</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=by.ivanvorobei.ping">Ping</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.h4lsoft.ping">Ping</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.lipinic.ping">Ping</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=sc.net.cmd">Ping Beeper</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.appplanex.pingmasternetworktools">Ping Master</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=in.pingnet.pingnet">Ping Net</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.manageengine.pingapp">Ping Tool</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pzolee.ping">Ping Tool</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ping.tools.network.utilities.everjustapps">Ping Tools</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ve.com.abicelis.pingwidget">Ping Widget</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.wt.pinger">Pinger</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ka.utilities.networkutils.pingtools">PingTools Network Utilities</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.levelup.touiteur">Plume</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ourcodeworld.pocketeditor">Pocket Editor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.stealthcopter.portdroid">PortDroid</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=blog.getstart.powershell">PowerShell</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=fr.enfantdoudou.powershellsbs">PowerShell Step by Step</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.newspaperdirect.pressreader.android.hc">PressReader</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.fourchars.privary">Privary</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.techuz.privatevault">Private Vault</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.mobilepcmonitor">Pulseway</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.koxx.pure_news">Pure news widget (Scrollable)</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.mrognor.pycharm">pycharm</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.qamar.pyconsole">PyConsole</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ru.iiec.pydroid3">Pydroid 3</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.inclem.pyonicinterpreter">Pyonic Python 2 interpreter</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=python.programming.coding.python3.development">Python</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kevalyaapps.qcprocessorbooster">QuadCore Processor Booster</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.beloko.quaketouch">Quake Touch</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.andromo.dev738399.app809185">Quiz my Powershell Free</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ddm.qute">Qute</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.krazeapps.rprogrammingcompiler">R Compiler</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=gr.bnspro.radioart">Radio Art</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.phrasebook.radiofi">Radio Finland</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=c.h.a.d.o.rambench">RAM Benchmark</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.rarlab.rar">RAR</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=it.Ettore.raspcontroller">RaspController</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.redrobe.raspicardimager">Raspi Card Imager</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=info.realip.site">Real IP Info</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.noodlecake.reallybadchess">Really Bad Chess</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.devolutions.remotedesktopmanager">Remote Desktop Manager</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.remoteit">remote.it</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.bugs.repair.fixproblems">Repair System</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=superrepair.forandroid">Repair System</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=master.repair.system.phone">Repair System</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=io.mrarm.irc">Revolution IRC</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.gamefavorites.rgbtohexconverter">rgb to hex converter</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.edpanda.words">RocketEng</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.jrummy.root.browserfree">Root Browser</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.waqaslam.rsswidget">RSS Widget</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=at.alladin.rmbt.android">RTR-NetTest</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ruff.ruff">ruff</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.mobilesecurity.viruscleaner">Safe Guard</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.qihoo.security">Safe Security</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.thisisaim.yourlanguage">SBS Radio</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=sh.cfw.utility">ScooterHacking Utility</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=sam.sdcardtester">SD Card Tester</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.fishann07.sdfs">SDFS</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.nature.seascape">Seascape</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ovmobile.secretcode">Secret Codes</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=prox.lab.calclock">Sectograph</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.balda.securetask">SecureTask</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=leen.ammeraal.chess">Senior Chess</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.wered.sensorsmultitool">Sensors Multitool</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal">Serial Bluetooth Terminal</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=de.kai_morich.serial_usb_terminal">Serial USB Terminal</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=de.kai_morich.serial_wifi_terminal">Serial WiFi Terminal</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.nerd.dev.ServerPingTrace">Server Ping &amp; Trace</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=app.serversidekick">Server Sidekick</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.acr.shellterminalemulator">Shell Terminal Emulator</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=pw.poyser.shellexecuter">ShellExecuter</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.njlabs.showjava">Show Java</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.palmtronix.shreddit.v1">Shreddit</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.siminfo.simcardinfo">SIM Card Info</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=myapp.SIM.Toolkit">SIM Tool</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.keesadens.SIMcardToolManager">SIM Tool Manager</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dp.sysmonitor.app">Simple System Monitor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.chibatching.worldclockwidget">Simple World Clock Widget</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pavelrekun.skit">Skit</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.smart.wakeup.alarm.clock">Smart Alarm</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.rootuninstaller.rambooster">Smart Booster</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.cvinfo.filemanager">Smart File Manager</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.smartio">SmartIO</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=de.srlabs.snoopsnitch">SnoopSnitch</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.vvorld.sourcecodeviewer">Source Code Viewer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=co.squidapp.squid">Squid</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=screenrecorder.videorecorder.rec.video.screen.recorder">SRecorder</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.xnano.android.sshserver">SSH-сервер</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.stationhead.app">Stationhead</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.android.stock">Stock Quote</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ehsanmortazavi.subnettingcalculator">Subnetting Calculator</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kelocube.mirrorclient">SuperDisplay</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.swiftapps.swiftbackup">Swift Backup</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.tortel.syslog">SysLog</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.smartprojects.SystemControlFree">System Control Free</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.hash.ar.systemlog">SystemLog</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=nextapp.sp">SystemPanel</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ohi.andre.consolelauncher">T-UI</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.hardcodedjoy.tcpterminal">TCP Terminal</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.teamviewer.teamviewer.market.mobile">TeamViewer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.arindamver1.temperaturecalculator">Temperature Calculator</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.sufficientlysecure.termbot">TermBot</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.qamar.terminal">Terminal</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.topickoo.terminal_emulator">Terminal Emulator</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.terminalcwo.terminal">Terminal X</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.server.auditor.ssh.client">Termius</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.termux">Termux</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.textra">Textra</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.boostmediaentertainment.joyfm">The JOY FM</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.lhent.theslangdictionary">The Slang Dictionary</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ticktick.task">TickTick</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.video.player.videoplayer.hdmaxvideoplayer.tiktikplayer">Tik Tik Video Player</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.tik.tok.tiktok.follower.fans.fan.like.analysis.app">TikFame</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ch.bitspin.timely">Timely</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.netsky.tincat">Tincat</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=maxcom.toolbox.free">Tool Box</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ghisler.android.TotalCommander">Total Commander</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.appsteka.traceroute">Traceroute</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.smart.switch.transfer">TrebleShot</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=tunein.player">TuneIn Radio</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.viyatek.ultimatefacts">Ultimate Facts</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.geekyouup.android.ustopwatch">Ultimate Stopwatch</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=fahrbot.apps.undelete">Undeleter</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dropackinfill.keda.date">Univ. Date Converter</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.thiyagaraaj.unixcommands">Unix</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=de.dieterthiess.uptimewidget">Uptime Widget</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pocean.urban_dict_slang">Urban Dictionary</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.urbandictionary.android">Urban Dictionary</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=savelink.com.save_link">Url Opener</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=tech.ula">UserLAnd</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=cz.ackee.ventusky">Ventusky</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=vn.vhn.vsc">VHEditor</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.viber.voip">Viber</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ssd.android.vipre">VIPRE Android Security</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=lk.visual.code.mobile">Visual Code Mobile</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android">VNC Viewer</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.triton.voxit">Voxit</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=slowscript.warpinator">Warpinator</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.weawow">Weawow</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=webtools.ddm.com.webtools">Web Tools</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=nextapp.websharing">WebSharing Lite</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.webview.tester">WebView Tester</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ubergeek42.WeechatAndroid.dev">Weechat-Android</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=vtn.weekcalendar.release">Week Calendar</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.iqmor.vault">WeVault</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=xsoftstudio.cpu.widget">Widgets</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=wifi.automatic.wifi.auto.connect.wifi.manager">WiFi Auto Connect</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ddm.iptoolslight">WiFi Tools</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ubnt.usurvey">WiFiman</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.nullsoft.winamp">Winamp</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.gamblerstudio.winxpsimfull">Windows Simulator</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=esselgroup.zeemedia.wionews">WION</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ru.meefik.wshell">wShell</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore">X-plore</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=cn.xender">Xender</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.lapay.xmleditor">XML Редактор</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=xcom.saplin.xOPS">xOPS</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.pandaz.xor">XOR</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.mindefy.phoneaddiction.mobilepe">YourHour</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.zenofm.player">Zeno Radio</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.bestringtones.zztopringtones">ZZ Top Ringtones</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.radio.style">  AmoRadio</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=wiki.algorithm.algorithms">Алгоритмы</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=erfanrouhani.antispy">Анти шпион</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=me.bazaart.app">Базарт</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=info.javaway.alarmclock">Будильник</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=net.apptronic.budget">Бюджет</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=cat.mvmike.minimalcalendarwidget">Виджет МиниКалендарь</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=smsr.com.cw">Виджет отсчета времени</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.roysolberg.android.datacounter">Виджет Счётчика Данных</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.sentryapplications.alarmclock">Говорящий будильник плюс</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.exatools.gpsdata">Данные GPS</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.mobile_infographics_tools.mydrive">Диски</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.microsoft.appmanager">Диспетчер вашего телефона</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=mic.app.gastosdiarios_clasico">Ежедневные Расходы 2</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.compilershub.tasknotes">Заметки о задачах</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.newgenerationhub.speedtest.meter.wifi.coverage.speed.test">Измеритель скорости - покрытие Wi-Fi и тест скорости</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.arcane.incognito">Инкогнито</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.liuzh.deviceinfo">Инфо об устройстве</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.fsoydan.howistheweather">Как погода</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=all.in.one.calculator">Калькулятор</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=trasco.c.calculadorabinario">Калькулятор | конвертер</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.currencywiki.currencyconverter">Конвертер валют</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.digitalchemy.currencyconverter">Конвертер Плюс</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=pl.itcraft.fracht.worldtimezoneconverter">Конвертер часовых поясов</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.arumcomm.developerconsole">Консоль разработчика</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ktoicorp.ktoi">КтоЯ</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ru.johnyzak.latinphrases">Латынь. Сборник крылатых фраз</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.arf.weatherstation">Метеостанция</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.genuinelodge.utils.timebuddies">милый отсчет</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.kuto.browser">Мини браузер KUTO</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=by.a1.selfcare">Мой A1</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.freemium.android.apps.gps.coordinates">Мой GPS-координаты</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=in.lazymanstudios.myfilesender">Мой отправитель файла</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=acr.browser.barebones">Молния</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.digrasoft.mygpslocation">Моя GPS позиция</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=media.music.musicplayer">Музыка</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.multimedia.mp3.musicplayer">Музыкальный проигрыватель</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ak41.mp3player">Музыкальный проигрыватель</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ddolcatmaster.SmartBatteryManagement">Напоминание о зарядке</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=me.gira.widget.countdown">Обратный Отсчет Виджет</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=me.empirical.android.application.fillmemory">Оптимизатор RAM</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=developers.artvivid.tearoffcalendarru">Отрывной календарь</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=info.vazquezsoftware.weatheralarms">Погодные Оповещения</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=org.tgi.NotesTakingPad">Примечания Взятие Pad</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=info.lamatricexiste.networksearch">Проверка домашней сети WiFi</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.dilstudio.easyrecipes">Простые рецепты</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=de.program_co.benradioclock">Радио-будильник</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=mobi.infolife.appbackup">Резервные копии и восстановление приложений</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ringtones.androidringtone2019">Рингтон для Android 2021</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.Gild.Salat">Салаты</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=jp.imxs.skr.servicekiller">Сервис-убийца</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.rayg.sirenringtones">Сирена Рингтоны</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.system_administration_lite">Системное администрирование</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=ru.sputnik.browser">Спутник</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.victorlapin.usagestats">Статистика</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=app.tahachi.batterydoctor">Супер Быстрый зарядное устройство</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.thetamobile.smartswitch.backup.restore">Умная переключатель мобильный</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.live.work.careofself">Уход за собой</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.sololearn.python">Учим Python</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.alphainventor.filemanager">Файловый менеджер +</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=fm.clean.pro">Файловый менеджер для Суперпользователи</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.chess.strategy.boardgame">Шахматы</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.mz.chess">Шахматы</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.ohvui.chess">Шахматы</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=uk.co.aifactory.chessfree">Шахматы Free</a></span></li>
+<li><span><a href="https://www.google.com/search?q=com.yandex.browser.lite">Яндекс Браузер</a></span></li>
+<li><span><a href="https://play.google.com/store/apps/details?id=com.truefriend.newglobala">한국투자증권 해외선물</a></span></li>
+</ul>
+<p>List made using <a href="https://play.google.com/store/apps/details?id=de.onyxbits.listmyapps">List My Apps</a></p>
+</article>
+<script>
+  var imgs = document.getElementsByTagName("img");
+  var list = new Array();
+  for(var i = 0; i < imgs.length; i++){
+     list[i] = imgs[i].src;
+  }
+  for(var i = 0; i < imgs.length; i++){
+     imgs[i].onclick = function() {
+       jsCallback.showPhotosInGallery(this.src, list);
+     }
+  }
+</script>
+</body>
+</html>
